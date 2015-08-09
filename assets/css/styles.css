@@ -107,16 +107,16 @@ img {
  * Component: Project;
  */
 .c-project {
-    margin-bottom: 6em;
+    padding-top: 3em;
 }
     .c-project__position {
         opacity: 0.8;
     }
 
-    .c-project__visual {
+    .c-project:nth-child( even ) {
+        padding-top: 4.5em;
         display: block;
         margin: 0 0 1.5em;
-        padding-top: 3em;
         color: #FFF;
         background-image: -webkit-linear-gradient(355deg,rgb(131,178,247) 10%,rgb(116,223,242) 90%);
         background-image: linear-gradient(95deg,rgb(131,178,247) 10%,rgb(116,223,242) 90%);
