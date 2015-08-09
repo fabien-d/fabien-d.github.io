@@ -10,6 +10,7 @@ html {
 
 body {
     margin: 0;
+    text-align: center;
 }
 
 svg {
@@ -17,7 +18,6 @@ svg {
     vertical-align: middle;
 }
 
-h2,
 p,
 ul,
 dl {
@@ -32,15 +32,25 @@ h1 {
 }
 
 h2 {
-    font-size: 30px;
-    font-size: 1.875rem;
-    line-height: 1.6;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin: 0 0 1em;
 }
 
 img {
     max-width: 100%;
     vertical-align: bottom;
 }
+
+.c-masthead {
+    padding: 1.5em 0;
+}
+    .c-masthead__tagline {
+        display: block;
+        font-size: 20px;
+        opacity: 0.5;
+    }
 
 /**
  * Component: Button;
@@ -52,11 +62,16 @@ img {
     text-decoration: none;
     border: none;
     border-radius: 4px;
-    padding: 12px 48px;
-    background: rgb( 0, 149, 135 );
+    padding: 12px 24px;
+    background: rgb(1,135,208);
     color: #FFF;
     transition: background-color .3s ease-out, color .3s ease-out;
 }
+
+    .c-btn:hover,
+    .c-btn:focus {
+        background: rgb(2,168,243);
+    }
 
 /**
  * Component: List;
@@ -73,10 +88,12 @@ img {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 0;
     }
 
         .c-list--hor .c-list__item {
-            margin: 0 12px;
+            margin: 0 12px 24px;
         }
 
         .c-list--hor .c-list__link {
@@ -90,86 +107,17 @@ img {
  * Component: Project;
  */
 .c-project {
-    /*color: #FFF;*/
-    padding: 3em 3em 0;
-    text-align: center;
+    margin-bottom: 6em;
 }
-    .c-project__visual {
-        text-align: center;
-        margin-bottom: 24px;
-    }
-
-    .c-project__body {}
-
-    /**
-     * Component: Project - Extensions;
-     */
-    /*.c-project--popkey-desktop {
-        background-image: -webkit-linear-gradient(355deg,rgb(43, 149, 232) 10%,rgb(46, 181, 232) 90%);
-        background-image: linear-gradient(95deg,rgb(43, 149, 232) 10%,rgb(46, 181, 232) 90%);
-    }*/
-
-        /*.c-project--popkey-web .c-btn,
-        .c-project--popkey-desktop .c-btn {
-            color: #FFF;
-            background: #F845B3;
-        }*/
-
-    /*.c-project--popkey-web {
-        background-image: -webkit-linear-gradient(355deg,rgb(131, 139, 247) 10%,rgb(242, 116, 226) 90%);
-        background-image: linear-gradient(95deg,rgb(131, 139, 247) 10%,rgb(242, 116, 226) 90%);
-    }
-
-    .c-project--wam {
-        background-image: -webkit-linear-gradient(355deg,rgb(0, 0, 0) 10%,rgb(34,40,46) 90%);
-        background-image: linear-gradient(95deg,rgb(0, 0, 0) 10%,rgb(34,40,46) 90%);
-    }*/
-
-        .c-project--wam a {
-            color: #FFF;
-            transition: color .3s ease-out;
-        }
-        .c-project--wam a:hover,
-        .c-project--wam a:focus {
-            color: #EC008C;
-        }
-
-        /*.c-project--wam .c-btn {
-            color: #FFF;
-            background: rgb(0,149,135);
-        }*/
-
-    /*.c-project--crated {
-        background-color: #171E25;
-    }*/
-
-    .c-project:nth-child( odd ) {
-        background: rgb(206,215,219);
-    }
-
-        /*.c-project--crated .c-btn {
-            color: #FFF;
-            background: #30BEDA;
-        }*/
-
-@media ( min-width: 750px ) {
-    .o-media {
-        display: flex;
-    }
-        .o-media__aside,
-        .o-media__body {
-            width: 50vw;
-        }
-
-        .o-media__body {
-            align-self: center;
-        }
-
-    .o-media--rev {
-        /*flex-direction: row-reverse;*/
+    .c-project__position {
+        opacity: 0.8;
     }
 
     .c-project__visual {
-        margin-bottom: 0;
+        display: block;
+        margin: 0 0 1.5em;
+        padding-top: 3em;
+        color: #FFF;
+        background-image: -webkit-linear-gradient(355deg,rgb(131,178,247) 10%,rgb(116,223,242) 90%);
+        background-image: linear-gradient(95deg,rgb(131,178,247) 10%,rgb(116,223,242) 90%);
     }
-}
