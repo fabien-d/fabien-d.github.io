@@ -1,76 +1,79 @@
 html {
-    font-size: 1em;
-    font-family: Helvetica, sans-serif;
-    line-height: 1.5;
+    font: 1em/1.5 Georgia, 'Times New Roman', serif;
     background-color: #FFF;
-    color: rgb( 32, 32, 32 );
+    color: #202020;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
 
 body {
+    position: relative;
     margin: 0;
-    text-align: center;
 }
 
-svg {
-    display: inline-block;
-    vertical-align: middle;
-}
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        border-left: 1px dashed rgb( 200, 200, 200 );
+    }
 
-p,
-ul,
-dl {
-    margin: 0 0 24px;
-}
-
+/**
+ * Basic text styles
+ */
 h1 {
-    font-size: 36px;
-    font-size: 2.25rem;
-    line-height: 1.3334;
+    font-size: 30px;
+    font: 300 1.875rem/1.3334 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
     margin: 0;
 }
 
 h2 {
-    font-size: 24px;
-    font-size: 1.5rem;
-    line-height: 1;
+    font-size: 20px;
+    font: 300 1.25rem/1.2 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
     margin: 0 0 1em;
 }
+
+p {
+    margin: 0 0 1.5em;
+}
+
+a {
+    color: #2B5681;
+    transition: color .3s ease-out;
+}
+
+    a:hover,
+    a:focus {
+        color: #202020;
+    }
 
 img {
     max-width: 100%;
     vertical-align: bottom;
 }
 
-.c-masthead {
-    padding: 1.5em 0;
+body {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
 }
-    .c-masthead__tagline {
-        display: block;
-        font-size: 20px;
-        opacity: 0.5;
-    }
 
 /**
- * Component: Button;
+ * Layout: Page;
  */
-.c-btn {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    border-radius: 4px;
-    padding: 12px 24px;
-    background: rgb(1,135,208);
-    color: #FFF;
-    transition: background-color .3s ease-out, color .3s ease-out;
-}
+.l-page {}
 
-    .c-btn:hover,
-    .c-btn:focus {
-        background: rgb(2,168,243);
+    .l-page__separator {
+        position: relative;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        text-align: center;
+        background-color: #FFF;
+    }
+
+    .l-page__masthead {
+        margin-bottom: 3em;
     }
 
 /**
@@ -79,6 +82,7 @@ img {
 .c-list.is-unstyled {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
     /**
@@ -86,38 +90,93 @@ img {
      */
     .c-list--hor {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: inherit;
         flex-wrap: wrap;
-        margin-bottom: 0;
+        justify-content: center;
     }
 
         .c-list--hor .c-list__item {
-            margin: 0 12px 24px;
-        }
-
-        .c-list--hor .c-list__link {
-            font-size: 22px;
-            text-decoration: none;
-            display: block;
-            line-height: 48px;
+            margin-left: 0.75em;
+            margin-right: 0.75em;
+            margin-bottom: 1.5em;
         }
 
 /**
  * Component: Project;
  */
 .c-project {
-    padding-top: 3em;
+    position: relative;
+    background: #FFF;
+    text-align: center;
+    margin-bottom: 3em;
 }
-    .c-project__position {
-        opacity: 0.8;
+
+    .c-project__body {
+        margin-bottom: 1.5em;
     }
 
-    .c-project:nth-child( even ) {
-        padding-top: 4.5em;
-        display: block;
-        margin: 0 0 1.5em;
-        color: #FFF;
-        background-image: -webkit-linear-gradient(355deg,rgb(131,178,247) 10%,rgb(116,223,242) 90%);
-        background-image: linear-gradient(95deg,rgb(131,178,247) 10%,rgb(116,223,242) 90%);
+@media ( min-width: 60em ) {
+
+    h1 {
+        font-size: 36px;
+        font-size: 2.25rem;
+        line-height: 1.3334;
     }
+
+    h2 {
+        font-size: 24px;
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+
+    /**
+     * Layout: Page;
+     */
+    .l-page {}
+
+        .l-page__separator {
+            padding-top: 4.5em;
+            padding-bottom: 4.5em;
+        }
+
+        .l-page__masthead {
+            margin-bottom: 4.5em;
+        }
+
+    .c-list--hor.is-left\@lg {
+        justify-content: flex-start;
+    }
+
+    .c-list--hor.is-left\@lg .c-list__item {
+        margin-right: 1.5em;
+        margin-left: 0;
+    }
+
+    /**
+     * Component: Project;
+     */
+    .c-project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 9em;
+        text-align: left;
+    }
+
+        .c-project__aside {
+            margin-left: 4.5em;
+            text-align: center;
+        }
+
+        /**
+         * Component: Project - Extensions;
+         */
+        .c-project--rev {
+            flex-direction: row-reverse;
+        }
+
+            .c-project--rev .c-project__aside {
+                margin-left: 0;
+                margin-right: 4.5em;
+            }
+}

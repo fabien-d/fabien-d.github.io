@@ -2,165 +2,228 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Fabien Doiron - Front-end Developer, Designer, Open Source Enthusiast</title>
+    <title>Fabien Doiron, Senior front-end developer</title>
     <meta name="description" content="Online portfolio of front-end developer Fabien Doiron">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
+<body class="l-page">
 
-    <h1 class="c-masthead">Fabien Doiron<span class="c-masthead__tagline">Senior Front-end Developer</span></h1>
-
-    <section class="c-project c-project--popkey-desktop">
-        <h1>PopKey for Desktop</h1>
-        <p class="c-project__position">Lead Front-end Developer</p>
+    <header class="l-page__separator l-page__masthead">
+        <h1>Fabien Doiron</h1>
+        <p>Senior front-end developer</p>
 
         <ul class="c-list c-list--hor is-unstyled">
             <li class="c-list__item">
-                <a href="https://angularjs.org/">
-                    <img src="assets/img/logos/angularjs.svg" width="45px" height="48px" alt="AngularJS">
+                <a href="https://www.github.com/fabien-d">
+                    <img src="assets/img/logos/github.svg" width="25px" height="24px" alt="GitHub">
                 </a>
             </li>
             <li class="c-list__item">
-                <a href="http://electron.atom.io/">
-                    <img src="assets/img/logos/electron.svg" width="44px" height="48px" alt="Electron">
+                <a href="https://www.twitter.com/fabien_doiron">
+                    <img src="assets/img/logos/twitter.svg" width="29px" height="24px" alt="Twitter">
                 </a>
             </li>
             <li class="c-list__item">
-                <a href="http://sass-lang.com/">
-                    <img src="assets/img/logos/sass.svg" width="64px" height="48px" alt="Sass">
-                </a>
-            </li>
-            <li class="c-list__item">
-                <a href="http://gruntjs.com/">
-                    <img src="assets/img/logos/grunt.svg" width="36px" height="48px" alt="Grunt">
+                <a href="https://ca.linkedin.com/in/fdoiron">
+                    <img src="assets/img/logos/linkedin.svg" width="24px" height="24px" alt="LinkedIn">
                 </a>
             </li>
         </ul>
+    </header>
 
-        <p><a class="c-btn" href="https://popkey.co/send-gifs">Download PopKey for Desktop</a></p>
+    <section class="c-project">
+        <article class="c-project__body">
+            <h1>PopKey for Desktop</h1>
+            <p>Lead front-end developer</p>
 
-        <img src="/assets/img/popkey-desktop.png" alt="PopKey for Desktop application screenshot showing a grid of GIFs">
+            <ul class="c-list c-list--hor is-unstyled is-left@lg">
+                <li class="c-list__item">
+                    <a href="https://angularjs.org/">
+                        <img src="assets/img/logos/angularjs.svg" width="45px" height="48px" alt="AngularJS">
+                    </a>
+                </li>
+                <li class="c-list__item">
+                    <a href="http://electron.atom.io/">
+                        <img src="assets/img/logos/electron.svg" width="44px" height="48px" alt="Electron">
+                    </a>
+                </li>
+                <li class="c-list__item">
+                    <a href="http://sass-lang.com/">
+                        <img src="assets/img/logos/sass.svg" width="64px" height="48px" alt="Sass">
+                    </a>
+                </li>
+                <li class="c-list__item">
+                    <a href="http://gruntjs.com/">
+                        <img src="assets/img/logos/grunt.svg" width="36px" height="48px" alt="Grunt">
+                    </a>
+                </li>
+            </ul>
+
+            <a class="c-btn" href="https://popkey.co/send-gifs">Download PopKey for Desktop</a>
+        </article>
+
+        <aside class="c-project__aside">
+            <picture>
+                <source media="(min-width: 78em)" srcset="/assets/img/popkey-desktop-lg.png">
+                <source media="(min-width: 30em)" srcset="/assets/img/popkey-desktop-md.png">
+                <img src="/assets/img/popkey-desktop-sm.png" alt="PopKey for Desktop application screenshot showing a grid of GIFs">
+            </picture>
+        </aside>
     </section>
 
-    <section class="c-project c-project--popkey-web">
-        <h1>PopKey Web</h1>
-        <p class="c-project__position">Lead Front-end Developer</p>
+    <section class="c-project c-project--rev">
+        <article class="c-project__body">
+            <h1>PopKey Web</h1>
+            <p>Lead front-end developer</p>
 
+            <ul class="c-list c-list--hor is-unstyled is-left@lg">
+                <li class="c-list__item">
+                    <img src="assets/img/logos/javascript.svg" width="48px" height="48px" alt="JavaScript">
+                </li>
+                <li class="c-list__item">
+                    <a href="https://babeljs.io/">
+                        <img src="assets/img/logos/babel.svg" width="123px" height="48px" alt="Babel">
+                    </a>
+                </li>
+                <li class="c-list__item">
+                    <a href="http://sass-lang.com/">
+                        <img src="assets/img/logos/sass.svg" width="64px" height="48px" alt="Sass">
+                    </a>
+                </li>
+                <li class="c-list__item">
+                    <a href="http://gruntjs.com/">
+                        <img src="assets/img/logos/grunt.svg" width="36px" height="48px" alt="Grunt">
+                    </a>
+                </li>
+            </ul>
+
+            <a class="c-btn" href="https://popkey.co/">Visit PopKey</a>
+        </article>
+
+        <aside class="c-project__aside">
+            <picture>
+                <source media="(min-width: 78em)" srcset="/assets/img/popkey-web-lg.png">
+                <source media="(min-width: 30em)" srcset="/assets/img/popkey-web-md.png">
+                <img src="/assets/img/popkey-web-sm.png" alt="PopKey web homepage screenshot showing a grid of GIFs">
+            </picture>
+        </aside>
+    </section>
+
+    <section class="c-project">
+        <article class="c-project__body">
+            <h1>PopKey GIF It</h1>
+            <p>Lead front-end developer</p>
+
+            <ul class="c-list c-list--hor is-unstyled is-left@lg">
+                <li class="c-list__item">
+                    <img src="assets/img/logos/javascript.svg" width="48px" height="48px" alt="JavaScript">
+                </li>
+            </ul>
+
+            <a class="c-btn" href="https://chrome.google.com/webstore/detail/popkey-gif-it/kaniaaldjgdbicnnhpjcokijkdejehfn">Install PopKey GIF It from Chrome</a>
+        </article>
+
+        <aside class="c-project__aside">
+            <picture>
+                <source media="(min-width: 78em)" srcset="/assets/img/popkey-gifit-lg.png">
+                <source media="(min-width: 30em)" srcset="/assets/img/popkey-gifit-md.png">
+                <img src="/assets/img/popkey-gifit-sm.png" alt="PopKey GIF It Chrome extension screenshot">
+            </picture>
+        </aside>
+    </section>
+
+    <section class="c-project c-project--rev">
+        <article class="c-project__body">
+            <h1>Word Art Maker</h1>
+            <p>Lead front-end developer, project manager</p>
+
+            <ul class="c-list c-list--hor is-unstyled is-left@lg">
+                <li class="c-list__item">
+                    <img src="assets/img/logos/javascript.svg" width="48px" height="48px" alt="JavaScript">
+                </li>
+                <li class="c-list__item">
+                    <a href="http://browserify.org/">
+                        <img src="assets/img/logos/browserify.svg" width="162px" height="48px" alt="Browserify">
+                    </a>
+                </li>
+                <li class="c-list__item">
+                    <a href="http://sass-lang.com/">
+                        <img src="assets/img/logos/sass.svg" width="64px" height="48px" alt="Sass">
+                    </a>
+                </li>
+                <li class="c-list__item">
+                    <a href="http://gruntjs.com/">
+                        <img src="assets/img/logos/grunt.svg" width="36px" height="48px" alt="Grunt">
+                    </a>
+                </li>
+            </ul>
+
+            <a class="c-btn" href="http://www.canvaspop.com/word-art-maker">Make a custom canvas print</a>
+        </article>
+
+        <aside class="c-project__aside">
+            <picture>
+                <source media="(min-width: 78em)" srcset="/assets/img/canvaspop-wam-lg.png">
+                <source media="(min-width: 30em)" srcset="/assets/img/canvaspop-wam-md.png">
+                <img src="/assets/img/canvaspop-wam-sm.png" alt="CanvasPop Word Art Maker product screenshot">
+            </picture>
+        </aside>
+    </section>
+
+    <section class="c-project">
+        <article class="c-project__body">
+            <h1>Crated</h1>
+            <p>Lead front-end developer</p>
+
+            <ul class="c-list c-list--hor is-unstyled is-left@lg">
+                <li class="c-list__item">
+                    <img src="assets/img/logos/javascript.svg" width="48px" height="48px" alt="JavaScript">
+                </li>
+                <li class="c-list__item">
+                    <a href="http://sass-lang.com/">
+                        <img src="assets/img/logos/sass.svg" width="64px" height="48px" alt="Sass">
+                    </a>
+                </li>
+                <li class="c-list__item">
+                    <a href="http://gruntjs.com/">
+                        <img src="assets/img/logos/grunt.svg" width="36px" height="48px" alt="Grunt">
+                    </a>
+                </li>
+            </ul>
+
+            <a class="c-btn" href="https://crated.com/">Visit Crated</a>
+        </article>
+
+        <aside class="c-project__aside">
+            <picture>
+                <source media="(min-width: 78em)" srcset="/assets/img/crated-lg.png">
+                <source media="(min-width: 30em)" srcset="/assets/img/crated-md.png">
+                <img src="/assets/img/crated-sm.png" alt="Crated homepage screenshot">
+            </picture>
+        </aside>
+    </section>
+
+    <footer class="l-page__separator">
+        <h2>Interested in more? Follow me.</h2>
         <ul class="c-list c-list--hor is-unstyled">
             <li class="c-list__item">
-                <img src="assets/img/logos/javascript.svg" width="48px" height="48px" alt="JavaScript">
-            </li>
-            <li class="c-list__item">
-                <a href="https://babeljs.io/">
-                    <img src="assets/img/logos/babel.svg" width="123px" height="48px" alt="Babel">
+                <a href="https://www.github.com/fabien-d">
+                    <img src="assets/img/logos/github.svg" width="25px" height="24px" alt="GitHub">
                 </a>
             </li>
             <li class="c-list__item">
-                <a href="http://sass-lang.com/">
-                    <img src="assets/img/logos/sass.svg" width="64px" height="48px" alt="Sass">
+                <a href="https://www.twitter.com/fabien_doiron">
+                    <img src="assets/img/logos/twitter.svg" width="29px" height="24px" alt="Twitter">
                 </a>
             </li>
             <li class="c-list__item">
-                <a href="http://gruntjs.com/">
-                    <img src="assets/img/logos/grunt.svg" width="36px" height="48px" alt="Grunt">
+                <a href="https://ca.linkedin.com/in/fdoiron">
+                    <img src="assets/img/logos/linkedin.svg" width="24px" height="24px" alt="LinkedIn">
                 </a>
             </li>
         </ul>
-
-        <p><a class="c-btn" href="https://popkey.co/">Visit PopKey</a></p>
-
-        <img src="/assets/img/popkey-web.png" alt="PopKey web homepage screenshot showing a grid of GIFs">
-    </section>
-
-    <section class="c-project c-project--popkey-gif-it">
-        <h1>PopKey GIF It Chrome Extension</h1>
-        <p class="c-project__position">Lead Front-end Developer</p>
-
-        <ul class="c-list c-list--hor is-unstyled">
-            <li class="c-list__item">
-                <img src="assets/img/logos/javascript.svg" width="48px" height="48px" alt="JavaScript">
-            </li>
-        </ul>
-
-        <p><a class="c-btn" href="https://chrome.google.com/webstore/detail/popkey-gif-it/kaniaaldjgdbicnnhpjcokijkdejehfn">Install PopKey GIF It</a></p>
-
-        <img src="/assets/img/popkey-gifit.png" alt="PopKey GIF It Chrome extension screenshot">
-    </section>
-
-    <section class="c-project c-project--canvaspop-wam">
-        <h1>CanvasPop Word Art Maker</h1>
-        <p class="c-project__position">Lead Front-end Developer, Project Manager</p>
-
-        <ul class="c-list c-list--hor is-unstyled">
-            <li class="c-list__item">
-                <img src="assets/img/logos/javascript.svg" width="48px" height="48px" alt="JavaScript">
-            </li>
-            <li class="c-list__item">
-                <a href="http://browserify.org/">
-                    <img src="assets/img/logos/browserify.svg" width="162px" height="48px" alt="Browserify">
-                </a>
-            </li>
-            <li class="c-list__item">
-                <a href="http://sass-lang.com/">
-                    <img src="assets/img/logos/sass.svg" width="64px" height="48px" alt="Sass">
-                </a>
-            </li>
-            <li class="c-list__item">
-                <a href="http://gruntjs.com/">
-                    <img src="assets/img/logos/grunt.svg" width="36px" height="48px" alt="Grunt">
-                </a>
-            </li>
-        </ul>
-
-        <p><a class="c-btn" href="http://www.canvaspop.com/word-art-maker">Make a custom canvas print</a></p>
-
-        <img src="/assets/img/canvaspop-wam.png" alt="CanvasPop Word Art Maker product screenshot">
-    </section>
-
-    <section class="c-project c-project--crated">
-        <h1>crated.</h1>
-        <p class="c-project__position">Lead Front-end Developer</p>
-
-        <ul class="c-list c-list--hor is-unstyled">
-            <li class="c-list__item">
-                <img src="assets/img/logos/javascript.svg" width="48px" height="48px" alt="JavaScript">
-            </li>
-            <li class="c-list__item">
-                <a href="http://sass-lang.com/">
-                    <img src="assets/img/logos/sass.svg" width="64px" height="48px" alt="Sass">
-                </a>
-            </li>
-            <li class="c-list__item">
-                <a href="http://gruntjs.com/">
-                    <img src="assets/img/logos/grunt.svg" width="36px" height="48px" alt="Grunt">
-                </a>
-            </li>
-        </ul>
-
-        <p><a class="c-btn" href="https://crated.com/">Visit Crated</a></p>
-
-        <img src="/assets/img/crated.png" alt="Crated homepage screenshot">
-    </section>
-
-    <h2>Follow me on the web.</h2>
-    <ul class="c-list c-list--hor is-unstyled">
-        <li class="c-list__item">
-            <a href="https://www.github.com/fabien-d">
-                <img src="assets/img/logos/github.svg" width="25px" height="24px" alt="GitHub">
-            </a>
-        </li>
-        <li class="c-list__item">
-            <a href="https://www.twitter.com/fabien_doiron">
-                <img src="assets/img/logos/twitter.svg" width="29px" height="24px" alt="Twitter">
-            </a>
-        </li>
-        <li class="c-list__item">
-            <a href="https://ca.linkedin.com/in/fdoiron">
-                <img src="assets/img/logos/linkedin.svg" width="24px" height="24px" alt="LinkedIn">
-            </a>
-        </li>
-    </ul>
+    </footer>
 
 </body>
 </html>
