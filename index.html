@@ -16,12 +16,34 @@
     <style>
       body {
         font-family: "Work Sans", sans-serif;
+        color: #f1f3f4;
+        background-color: #202125;
+      }
+
+      .text-huge {
+        font-size: 3rem;
+      }
+
+      @media (min-width: 640px) {
+        .text-huge {
+          font-size: 5rem;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .text-huge {
+          font-size: 8rem;
+        }
+      }
+
+      video {
+        box-shadow: -20px 20px 0 0px rgba(255, 255, 255, 0.05);
       }
     </style>
   </head>
-  <body class="text-gray-800 bg-gray-100 text-lg leading-relaxed">
+  <body class="text-lg leading-relaxed">
     <header class="mb-16 sm:mb-24 md:mb-56 xl:mb-64">
-      <div class="flex p-8 justify-between">
+      <div class="sm:flex p-8 justify-between">
         <p class="lowercase">Fabien Doiron</p>
         <nav>
           <ul class="flex items-center">
@@ -35,11 +57,11 @@
         <div
           class="max-w-6xl mx-auto sm:text-center mt-10 mb-8 sm:mt-16 md:mt-40 xl:mt-56"
         >
-          <span class="text-2xl block font-normal">
-            Senior front-end developer
-          </span>
-          <h1 class="leading-tight text-4xl font-bold">
-            I write accessible, performant, reusable, and tested code.
+          <h1 class="leading-tight text-4xl sm:text-6xl font-bold">
+            <span class="text-xl sm:text-3xl block font-normal">
+              Senior front-end developer
+            </span>
+            I write accessible, performant, reusable, tested code.
           </h1>
           <p class="sm:max-w-lg mx-auto sm:text-center"></p>
         </div>
@@ -47,14 +69,19 @@
     </header>
 
     <main>
-      <section id="about-me" class="px-8 sm:px-16 mb-24 max-w-3xl mx-auto">
-        <h2 class="font-bold text-2xl leading-tight mb-4">The journey</h2>
-        <p class="mb-4">
+      <section
+        id="about-me"
+        class="px-8 sm:px-16 mb-24 md:mb-40 max-w-4xl mx-auto"
+      >
+        <h2 class="font-bold text-4xl sm:text-5xl leading-tight mb-10">
+          My journey
+        </h2>
+        <p class="mb-6">
           My first taste of programming happened in high school back in 2001. I
           remember being fascinated by what could be achieved writing code.
         </p>
 
-        <p class="mb-4">
+        <p class="mb-6">
           In the summer of 2003, what started as a normal baseball camp, ended
           with an offer that would change my life. I was invited to play
           baseball for Durham College. I immediately researched the school and
@@ -63,20 +90,20 @@
           months later I was on a plane.
         </p>
 
-        <p class="mb-4">
+        <p class="mb-6">
           I started in the industry as a designer. The good old days of
           designing in Photoshop, slicing and exporting images, and slapping it
           together in
           <code>table</code> markup.
         </p>
 
-        <p class="mb-4">
+        <p class="mb-10">
           Shortly after, I started designing and developing Flash applications
           and games with ActionScript. This started my transition into developer
           roles.
         </p>
 
-        <h3 class="font-bold text-lg mb-4">
+        <h3 class="font-bold text-2xl mb-4">
           When I'm not programming, you'll most likely find me:
         </h3>
         <ul class="list-outside list-disc ml-8">
@@ -91,35 +118,46 @@
       </section>
 
       <section id="work">
-        <h2 class="font-bold text-2xl leading-tight mb-4">
-          Highlights
-        </h2>
-        <div class="px-8 sm:px-16 mb-24 max-w-3xl mx-auto">
-          <ul>
-            <li>
-              <article>
-                <h3 class="font-bold text-lg mb-4">
-                  Auto reflow algorithm - PageCloud
-                </h3>
-                <p class="mb-4 text-right">The problem</p>
-                <p class="mb-4">
-                  &ldquo;Manual layouts&rdquo; in PageCloud allow users to
-                  position elements anywhere without constraints. This gives
-                  users complete creative freedom but breaks the native flow of
-                  elements. Whenever a user would edit text they would be
-                  required to manually re-adjust every element negatively
-                  affects by the change.
-                </p>
-                <p class="mb-4">
-                  <video autoplay loop muted playsinline>
-                    <source
-                      src="assets/videos/auto-reflow-before.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
-                </p>
-                <p class="mb-4 text-right">The solution</p>
-                <p class="mb-4">
+        <ul>
+          <li class="mb-24 md:mb-40">
+            <article>
+              <div class="px-8 sm:px-16 mb-10 max-w-4xl mx-auto">
+                <h2 class="font-bold text-4xl sm:text-5xl leading-tight">
+                  <span class="text-lg sm:text-xl block font-normal">
+                    Highlights
+                  </span>
+                  Auto reflow algorithm
+                </h2>
+              </div>
+              <div class="sm:grid sm:grid-cols-2 mx-auto max-w-6xl mb-24">
+                <video autoplay loop muted playsinline>
+                  <source
+                    src="assets/videos/auto-reflow-before.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div class="px-8 sm:pl-0 row-span-2">
+                  <h4
+                    class="mb-5 mt-8 leading-none font-bold text-huge relative sm:transform sm:-translate-x-32"
+                  >
+                    Problem
+                  </h4>
+                  <p class="sm:ml-10">
+                    &ldquo;Manual layouts&rdquo; in PageCloud allow users to
+                    position elements anywhere without constraints. This gives
+                    users complete creative freedom but breaks the native flow
+                    of elements. Whenever a user would edit text they would be
+                    required to manually re-adjust every element negatively
+                    affects by the change.
+                  </p>
+                </div>
+              </div>
+
+              <div class="px-8 sm:px-16 mb-24 md:mb-40 max-w-4xl mx-auto">
+                <h4 class="mb-5 mt-8 leading-none font-bold text-huge relative">
+                  Solution
+                </h4>
+                <p class="mb-6">
                   I wrote an auto reflow algorithm which recursively determines
                   how each objects relate to one another in real-time. While a
                   user edits text, the elements which are determined to be
@@ -128,7 +166,7 @@
                   when the text element shrink, certain elements will be pulled
                   up.
                 </p>
-                <p class="mb-4">
+                <p class="mb-10">
                   <video autoplay loop muted playsinline>
                     <source
                       src="assets/videos/auto-reflow-after.mp4"
@@ -136,13 +174,13 @@
                     />
                   </video>
                 </p>
-                <p class="mb-4">
+                <p class="mb-6">
                   When pushing elements down, affected elements were never in a
                   risk of collision. However, pulling elements up could lead to
                   collision. This was solved by determining where these
                   collision axis were, and ensure elements stopped prior.
                 </p>
-                <p class="mb-4">
+                <p class="mb-6">
                   <video autoplay loop muted playsinline>
                     <source
                       src="assets/videos/auto-reflow-collision.mp4"
@@ -150,76 +188,35 @@
                     />
                   </video>
                 </p>
-              </article>
-            </li>
-            <!-- <li>
-              <article>
-                <h3 class="font-bold text-lg mb-4">
-                  Gallery layouts - PageCloud
-                </h3>
-                <p>
-                  Lorem...
-                </p>
-              </article>
-            </li>
-            <li>
-              <article>
-                <h3 class="font-bold text-lg mb-4">
-                  Drawer component - PageCloud
-                </h3>
-                <p>
-                  Lorem...
-                </p>
-              </article>
-            </li>
-            <li>
-              <article>
-                <h3 class="font-bold text-lg mb-4">
-                  Full height sections - PageCloud
-                </h3>
-                <p>
-                  Lorem...
-                </p>
-              </article>
-            </li>
-            <li>
-              <article>
-                <h3 class="font-bold text-lg mb-4">
-                  Column width control - PageCloud
-                </h3>
-                <p>
-                  Lorem...
-                </p>
-              </article>
-            </li>
-            <li>
-              <article>
-                <h3 class="font-bold text-lg mb-4">
-                  Individual property control - PageCloud
-                </h3>
-                <p>
-                  Lorem...
-                </p>
-              </article>
-            </li> -->
-          </ul>
-        </div>
+              </div>
+            </article>
+          </li>
+          <li class="mb-24 md:mb-40">
+            <article>
+              <div class="px-8 sm:px-16 mb-10 max-w-4xl mx-auto">
+                More coming shortly&hellip;
+              </div>
+            </article>
+          </li>
+        </ul>
       </section>
     </main>
 
-    <footer id="reach-me" class="px-8 sm:px-16 mb-24 max-w-3xl mx-auto">
-      <h2 class="font-bold text-2xl leading-tight mb-4">Reach me</h2>
-      <ul class="flex justify-start items-center">
-        <li class="mr-2">
+    <footer id="reach-me" class="px-8 sm:px-16 mb-24 max-w-4xl mx-auto">
+      <h2 class="font-bold text-4xl sm:text-5xl leading-tight mb-5">
+        Reach me
+      </h2>
+      <ul class="sm:flex justify-start items-center">
+        <li class="mr-4">
           <a href="https://www.github.com/fabien-d">GitHub</a>
         </li>
-        <li class="mr-2">
+        <li class="mr-4">
           <a href="https://www.twitter.com/fabien_doiron">Twitter</a>
         </li>
-        <li class="mr-2">
+        <li class="mr-4">
           <a href="https://ca.linkedin.com/in/fdoiron">LinkedIn</a>
         </li>
-        <li class="mr-2">
+        <li class="mr-4">
           <a href="https://speakerdeck.com/fabien_doiron/">Speaker Deck</a>
         </li>
       </ul>
