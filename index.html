@@ -5,75 +5,46 @@
     <title>Fabien Doiron, Senior front-end developer</title>
     <meta
       name="description"
-      content="Online portfolio of front-end developer Fabien Doiron"
+      content="Online portfolio of senior front-end developer Fabien Doiron"
     />
     <meta name="viewport" content="width=device-width" />
     <link
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="node_modules/tailwindcss/dist/tailwind.css" />
-    <style>
-      body {
-        font-family: "Work Sans", sans-serif;
-        color: #f1f3f4;
-        background-color: #202125;
-      }
-
-      .text-huge {
-        font-size: 3rem;
-      }
-
-      @media (min-width: 640px) {
-        .text-huge {
-          font-size: 5rem;
-        }
-      }
-
-      @media (min-width: 1024px) {
-        .text-huge {
-          font-size: 8rem;
-        }
-      }
-
-      video {
-        box-shadow: -20px 20px 0 0px rgba(255, 255, 255, 0.05);
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.min.css" />
   </head>
-  <body class="text-lg leading-relaxed">
-    <header class="mb-16 sm:mb-24 md:mb-56 xl:mb-64">
-      <div class="sm:flex p-8 justify-between">
-        <p class="lowercase">Fabien Doiron</p>
-        <nav>
-          <ul class="flex items-center">
-            <li><a href="#about-me">About</a></li>
-            <li class="ml-8"><a href="#work">Work</a></li>
-            <li class="ml-8"><a href="#reach-me">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="px-8">
-        <div
-          class="max-w-6xl mx-auto sm:text-center mt-10 mb-8 sm:mt-16 md:mt-40 xl:mt-56"
-        >
-          <h1 class="leading-tight text-4xl sm:text-6xl font-bold">
-            <span class="text-xl sm:text-3xl block font-normal">
-              Senior front-end developer
-            </span>
-            I write accessible, performant, reusable, tested code.
-          </h1>
-          <p class="sm:max-w-lg mx-auto sm:text-center"></p>
-        </div>
+  <body
+    class="font-body p-8 bg-background text-20 leading-relaxed text-foreground"
+  >
+    <header>
+      <nav class="block mb-10">
+        <ul class="sm:flex items-center">
+          <li class="sm:flex-1">
+            Fabien Doiron
+          </li>
+          <li><a class="underline" href="#about-me">About</a></li>
+          <li class="sm:ml-8"><a class="underline" href="#work">Work</a></li>
+          <li class="sm:ml-8">
+            <a class="underline" href="#reach-me">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="max-w-6xl mx-auto sm:text-center mb-16 sm:mb-24 md:mb-56 xl:mb-64 sm:mt-16 md:mt-40 xl:mt-56"
+      >
+        <h1 class="leading-tight text-36 sm:text-48 md:text-64 font-bold">
+          <span class="text-18 sm:text-24 md:text-30 block font-normal">
+            Senior front-end developer
+          </span>
+          I write accessible, performant, reusable, tested code.
+        </h1>
       </div>
     </header>
 
     <main>
-      <section
-        id="about-me"
-        class="px-8 sm:px-16 mb-24 md:mb-40 max-w-4xl mx-auto"
-      >
-        <h2 class="font-bold text-4xl sm:text-5xl leading-tight mb-10">
+      <section id="about-me" class="mb-10 sm:px-16 md:mb-24 max-w-3xl mx-auto">
+        <h2 class="font-bold text-30 sm:text-48 leading-tight mb-6 sm:mb-10">
           My journey
         </h2>
         <p class="mb-6">
@@ -82,12 +53,13 @@
         </p>
 
         <p class="mb-6">
-          In the summer of 2003, what started as a normal baseball camp, ended
-          with an offer that would change my life. I was invited to play
-          baseball for Durham College. I immediately researched the school and
-          the programs it offered. I got to the &ldquo;Web Developer&rdquo;
-          program and got flashbacks of my high school programming class. Two
-          months later I was on a plane.
+          In the summer of 2003, I received a life-changing invite to play
+          baseball for
+          <a href="https://durhamcollege.ca/" class="underline"
+            >Durham College</a
+          >. I immediately researched the school and the programs it offered. I
+          got to the &ldquo;Web Developer&rdquo; program and got flashbacks of
+          my high school programming class. Two months later I was on a plane.
         </p>
 
         <p class="mb-6">
@@ -97,14 +69,14 @@
           <code>table</code> markup.
         </p>
 
-        <p class="mb-10">
+        <p class="mb-6">
           Shortly after, I started designing and developing Flash applications
-          and games with ActionScript. This started my transition into developer
-          roles.
+          and games. This started my transition into developer roles. And I've
+          been on the front-end bandwagon ever since.
         </p>
 
-        <h3 class="font-bold text-2xl mb-4">
-          When I'm not programming, you'll most likely find me:
+        <h3 class="font-bold text-24 mb-4">
+          My hobbies
         </h3>
         <ul class="list-outside list-disc ml-8">
           <li class="mb-2">
@@ -121,40 +93,52 @@
         <ul>
           <li class="mb-24 md:mb-40">
             <article>
-              <div class="px-8 sm:px-16 mb-10 max-w-4xl mx-auto">
-                <h2 class="font-bold text-4xl sm:text-5xl leading-tight">
-                  <span class="text-lg sm:text-xl block font-normal">
+              <div class="mb-6 sm:mb-10 max-w-4xl mx-auto">
+                <h2 class="font-bold text-36 sm:text-48 leading-tight">
+                  <span class="text-20 block font-normal">
                     Highlights
                   </span>
                   Auto reflow algorithm
                 </h2>
               </div>
-              <div class="sm:grid sm:grid-cols-2 mx-auto max-w-6xl mb-24">
-                <video autoplay loop muted playsinline>
-                  <source
-                    src="assets/videos/auto-reflow-before.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-                <div class="px-8 sm:pl-0 row-span-2">
+              <div
+                class="sm:grid sm:grid-cols-2 mx-auto max-w-6xl mb-10 sm:mb-16 md:mb-24"
+              >
+                <figure>
+                  <video autoplay loop muted playsinline class="mb-1">
+                    <source
+                      src="assets/videos/auto-reflow-before.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                  <figcaption class="text-14">
+                    Layout remained fixed on text changes
+                  </figcaption>
+                </figure>
+                <div class="row-span-2">
                   <h4
-                    class="mb-5 mt-8 leading-none font-bold text-huge relative sm:transform sm:-translate-x-32"
+                    class="bg-background sm:px-2 md:px-4 mb-5 mt-8 leading-none font-bold text-30 sm:text-48 md:text-80 lg:text-128 relative sm:transform sm:-translate-x-32"
                   >
                     Problem
                   </h4>
                   <p class="sm:ml-10">
-                    &ldquo;Manual layouts&rdquo; in PageCloud allow users to
-                    position elements anywhere without constraints. This gives
-                    users complete creative freedom but breaks the native flow
-                    of elements. Whenever a user would edit text they would be
-                    required to manually re-adjust every element negatively
-                    affects by the change.
+                    &ldquo;Manual layouts&rdquo; in
+                    <a class="underline" href="https://www.pagecloud.com"
+                      >PageCloud</a
+                    >
+                    allow users to position elements anywhere without
+                    constraints. This gives users complete creative freedom but
+                    breaks the native flow of elements. Whenever a user would
+                    edit text they would be required to manually re-adjust every
+                    element negatively affects by the change.
                   </p>
                 </div>
               </div>
 
-              <div class="px-8 sm:px-16 mb-24 md:mb-40 max-w-4xl mx-auto">
-                <h4 class="mb-5 mt-8 leading-none font-bold text-huge relative">
+              <div class="mb-10 md:mb-40 max-w-4xl mx-auto">
+                <h4
+                  class="mb-5 mt-8 leading-none font-bold text-30 sm:text-48 md:text-80 lg:text-128"
+                >
                   Solution
                 </h4>
                 <p class="mb-6">
@@ -166,34 +150,41 @@
                   when the text element shrink, certain elements will be pulled
                   up.
                 </p>
-                <p class="mb-10">
-                  <video autoplay loop muted playsinline>
+                <figure class="mb-6">
+                  <video autoplay loop muted playsinline class="mb-1">
                     <source
                       src="assets/videos/auto-reflow-after.mp4"
                       type="video/mp4"
                     />
                   </video>
-                </p>
+                  <figcaption class="text-14">
+                    Layout auto adjusts on text changes
+                  </figcaption>
+                </figure>
+
                 <p class="mb-6">
                   When pushing elements down, affected elements were never in a
                   risk of collision. However, pulling elements up could lead to
                   collision. This was solved by determining where these
                   collision axis were, and ensure elements stopped prior.
                 </p>
-                <p class="mb-6">
-                  <video autoplay loop muted playsinline>
+                <figure class="mb-6">
+                  <video autoplay loop muted playsinline class="mb-1">
                     <source
                       src="assets/videos/auto-reflow-collision.mp4"
                       type="video/mp4"
                     />
                   </video>
-                </p>
+                  <figcaption class="text-14">
+                    Bottom divider stops to prevent collision
+                  </figcaption>
+                </figure>
               </div>
             </article>
           </li>
           <li class="mb-24 md:mb-40">
             <article>
-              <div class="px-8 sm:px-16 mb-10 max-w-4xl mx-auto">
+              <div class="mb-10 max-w-4xl mx-auto">
                 More coming shortly&hellip;
               </div>
             </article>
@@ -202,22 +193,28 @@
       </section>
     </main>
 
-    <footer id="reach-me" class="px-8 sm:px-16 mb-24 max-w-4xl mx-auto">
+    <footer id="reach-me" class="mb-10 max-w-4xl mx-auto">
       <h2 class="font-bold text-4xl sm:text-5xl leading-tight mb-5">
         Reach me
       </h2>
       <ul class="sm:flex justify-start items-center">
         <li class="mr-4">
-          <a href="https://www.github.com/fabien-d">GitHub</a>
+          <a class="underline" href="https://www.github.com/fabien-d">GitHub</a>
         </li>
         <li class="mr-4">
-          <a href="https://www.twitter.com/fabien_doiron">Twitter</a>
+          <a class="underline" href="https://www.twitter.com/fabien_doiron"
+            >Twitter</a
+          >
         </li>
         <li class="mr-4">
-          <a href="https://ca.linkedin.com/in/fdoiron">LinkedIn</a>
+          <a class="underline" href="https://ca.linkedin.com/in/fdoiron"
+            >LinkedIn</a
+          >
         </li>
         <li class="mr-4">
-          <a href="https://speakerdeck.com/fabien_doiron/">Speaker Deck</a>
+          <a class="underline" href="https://speakerdeck.com/fabien_doiron/"
+            >Speaker Deck</a
+          >
         </li>
       </ul>
     </footer>
