@@ -1,0 +1,22 @@
+{
+  "name": "fabien-d.github.io",
+  "version": "1.0.0",
+  "description": "fabien-d.github.io ==================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabien-d/fabien-d.github.io.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabien-d/fabien-d.github.io/issues"
+  },
+  "homepage": "https://github.com/fabien-d/fabien-d.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^1.4.6"
+  }
+}

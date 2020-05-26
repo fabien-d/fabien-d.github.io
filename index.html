@@ -1,244 +1,228 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Fabien Doiron, Senior front-end developer</title>
-    <meta name="description" content="Online portfolio of front-end developer Fabien Doiron">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body class="l-page">
-
-    <header class="l-page__separator l-page__masthead">
-        <h1>Fabien Doiron</h1>
-        <p>Senior front-end developer</p>
-
-        <ul class="c-list c-list--hor is-unstyled">
-            <li class="c-list__item">
-                <a href="https://www.github.com/fabien-d">
-                    <img src="assets/img/logos/github.svg" width="25px" height="24px" alt="GitHub">
-                </a>
-            </li>
-            <li class="c-list__item">
-                <a href="https://www.twitter.com/fabien_doiron">
-                    <img src="assets/img/logos/twitter.svg" width="29px" height="24px" alt="Twitter">
-                </a>
-            </li>
-            <li class="c-list__item">
-                <a href="https://ca.linkedin.com/in/fdoiron">
-                    <img src="assets/img/logos/linkedin.svg" width="24px" height="24px" alt="LinkedIn">
-                </a>
-            </li>
-        </ul>
+    <meta
+      name="description"
+      content="Online portfolio of front-end developer Fabien Doiron"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="node_modules/tailwindcss/dist/tailwind.css" />
+    <style>
+      body {
+        font-family: "Work Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="text-gray-800 bg-gray-100 text-lg leading-relaxed">
+    <header class="mb-16 sm:mb-24 md:mb-56 xl:mb-64">
+      <div class="flex p-8 justify-between">
+        <p class="lowercase">Fabien Doiron</p>
+        <nav>
+          <ul class="flex items-center">
+            <li><a href="#about-me">About</a></li>
+            <li class="ml-8"><a href="#work">Work</a></li>
+            <li class="ml-8"><a href="#reach-me">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="px-8">
+        <div
+          class="max-w-6xl mx-auto sm:text-center mt-10 mb-8 sm:mt-16 md:mt-40 xl:mt-56"
+        >
+          <span class="text-2xl block font-normal">
+            Senior front-end developer
+          </span>
+          <h1 class="leading-tight text-4xl font-bold">
+            I write accessible, performant, reusable, and tested code.
+          </h1>
+          <p class="sm:max-w-lg mx-auto sm:text-center"></p>
+        </div>
+      </div>
     </header>
 
-    <section class="c-project">
-        <article class="c-project__body">
-            <h1>PopKey for Desktop</h1>
-            <p>Lead front-end developer</p>
+    <main>
+      <section id="about-me" class="px-8 sm:px-16 mb-24 max-w-3xl mx-auto">
+        <h2 class="font-bold text-2xl leading-tight mb-4">The journey</h2>
+        <p class="mb-4">
+          My first taste of programming happened in high school back in 2001. I
+          remember being fascinated by what could be achieved writing code.
+        </p>
 
-            <ul class="c-list c-list--hor is-unstyled is-left@lg">
-                <li class="c-list__item">
-                    <a href="https://angularjs.org/">
-                        <img src="assets/img/logos/angularjs.svg" width="45px" height="48px" alt="AngularJS">
-                    </a>
-                </li>
-                <li class="c-list__item">
-                    <a href="http://electron.atom.io/">
-                        <img src="assets/img/logos/electron.svg" width="44px" height="48px" alt="Electron">
-                    </a>
-                </li>
-                <li class="c-list__item">
-                    <a href="http://sass-lang.com/">
-                        <img src="assets/img/logos/sass.svg" width="64px" height="48px" alt="Sass">
-                    </a>
-                </li>
-                <li class="c-list__item">
-                    <a href="http://gruntjs.com/">
-                        <img src="assets/img/logos/grunt.svg" width="36px" height="48px" alt="Grunt">
-                    </a>
-                </li>
-            </ul>
+        <p class="mb-4">
+          In the summer of 2003, what started as a normal baseball camp, ended
+          with an offer that would change my life. I was invited to play
+          baseball for Durham College. I immediately researched the school and
+          the programs it offered. I got to the &ldquo;Web Developer&rdquo;
+          program and got flashbacks of my high school programming class. Two
+          months later I was on a plane.
+        </p>
 
-            <a class="c-btn" href="https://popkey.co/send-gifs">Download PopKey for Desktop</a>
-        </article>
+        <p class="mb-4">
+          I started in the industry as a designer. The good old days of
+          designing in Photoshop, slicing and exporting images, and slapping it
+          together in
+          <code>table</code> markup.
+        </p>
 
-        <aside class="c-project__aside">
-            <picture>
-                <source media="(min-width: 78em)" srcset="/assets/img/popkey-desktop-lg.png">
-                <source media="(min-width: 30em)" srcset="/assets/img/popkey-desktop-md.png">
-                <source media="(max-width: 30em)" srcset="/assets/img/popkey-desktop-sm.png">
-                <img src="/assets/img/popkey-desktop-md.png" alt="PopKey for Desktop application screenshot showing a grid of GIFs">
-            </picture>
-        </aside>
-    </section>
+        <p class="mb-4">
+          Shortly after, I started designing and developing Flash applications
+          and games with ActionScript. This started my transition into developer
+          roles.
+        </p>
 
-    <section class="c-project c-project--rev">
-        <article class="c-project__body">
-            <h1>PopKey Web</h1>
-            <p>Lead front-end developer</p>
-
-            <ul class="c-list c-list--hor is-unstyled is-left@lg">
-                <li class="c-list__item">
-                    <img src="assets/img/logos/javascript.svg" width="48px" height="48px" alt="JavaScript">
-                </li>
-                <li class="c-list__item">
-                    <a href="https://babeljs.io/">
-                        <img src="assets/img/logos/babel.svg" width="123px" height="48px" alt="Babel">
-                    </a>
-                </li>
-                <li class="c-list__item">
-                    <a href="http://sass-lang.com/">
-                        <img src="assets/img/logos/sass.svg" width="64px" height="48px" alt="Sass">
-                    </a>
-                </li>
-                <li class="c-list__item">
-                    <a href="http://gruntjs.com/">
-                        <img src="assets/img/logos/grunt.svg" width="36px" height="48px" alt="Grunt">
-                    </a>
-                </li>
-            </ul>
-
-            <a class="c-btn" href="https://popkey.co/">Visit PopKey</a>
-        </article>
-
-        <aside class="c-project__aside">
-            <picture>
-                <source media="(min-width: 78em)" srcset="/assets/img/popkey-web-lg.png">
-                <source media="(min-width: 30em)" srcset="/assets/img/popkey-web-md.png">
-                <source media="(max-width: 30em)" srcset="/assets/img/popkey-web-sm.png">
-                <img src="/assets/img/popkey-web-md.png" alt="PopKey web homepage screenshot showing a grid of GIFs">
-            </picture>
-        </aside>
-    </section>
-
-    <section class="c-project">
-        <article class="c-project__body">
-            <h1>PopKey GIF It</h1>
-            <p>Lead front-end developer</p>
-
-            <ul class="c-list c-list--hor is-unstyled is-left@lg">
-                <li class="c-list__item">
-                    <img src="assets/img/logos/javascript.svg" width="48px" height="48px" alt="JavaScript">
-                </li>
-            </ul>
-
-            <a class="c-btn" href="https://chrome.google.com/webstore/detail/popkey-gif-it/kaniaaldjgdbicnnhpjcokijkdejehfn">Install PopKey GIF It from Chrome</a>
-        </article>
-
-        <aside class="c-project__aside">
-            <picture>
-                <source media="(min-width: 78em)" srcset="/assets/img/popkey-gifit-lg.png">
-                <source media="(min-width: 30em)" srcset="/assets/img/popkey-gifit-md.png">
-                <source media="(max-width: 30em)" srcset="/assets/img/popkey-gifit-sm.png">
-                <img src="/assets/img/popkey-gifit-md.png" alt="PopKey GIF It Chrome extension screenshot">
-            </picture>
-        </aside>
-    </section>
-
-    <section class="c-project c-project--rev">
-        <article class="c-project__body">
-            <h1>Word Art Maker</h1>
-            <p>Lead front-end developer, project manager</p>
-
-            <ul class="c-list c-list--hor is-unstyled is-left@lg">
-                <li class="c-list__item">
-                    <img src="assets/img/logos/javascript.svg" width="48px" height="48px" alt="JavaScript">
-                </li>
-                <li class="c-list__item">
-                    <a href="http://browserify.org/">
-                        <img src="assets/img/logos/browserify.svg" width="162px" height="48px" alt="Browserify">
-                    </a>
-                </li>
-                <li class="c-list__item">
-                    <a href="http://sass-lang.com/">
-                        <img src="assets/img/logos/sass.svg" width="64px" height="48px" alt="Sass">
-                    </a>
-                </li>
-                <li class="c-list__item">
-                    <a href="http://gruntjs.com/">
-                        <img src="assets/img/logos/grunt.svg" width="36px" height="48px" alt="Grunt">
-                    </a>
-                </li>
-            </ul>
-
-            <a class="c-btn" href="http://www.canvaspop.com/word-art-maker">Make a custom canvas print</a>
-        </article>
-
-        <aside class="c-project__aside">
-            <picture>
-                <source media="(min-width: 78em)" srcset="/assets/img/canvaspop-wam-lg.png">
-                <source media="(min-width: 30em)" srcset="/assets/img/canvaspop-wam-md.png">
-                <source media="(max-width: 30em)" srcset="/assets/img/canvaspop-wam-sm.png">
-                <img src="/assets/img/canvaspop-wam-md.png" alt="CanvasPop Word Art Maker product screenshot">
-            </picture>
-        </aside>
-    </section>
-
-    <section class="c-project">
-        <article class="c-project__body">
-            <h1>Crated</h1>
-            <p>Lead front-end developer</p>
-
-            <ul class="c-list c-list--hor is-unstyled is-left@lg">
-                <li class="c-list__item">
-                    <img src="assets/img/logos/javascript.svg" width="48px" height="48px" alt="JavaScript">
-                </li>
-                <li class="c-list__item">
-                    <a href="http://sass-lang.com/">
-                        <img src="assets/img/logos/sass.svg" width="64px" height="48px" alt="Sass">
-                    </a>
-                </li>
-                <li class="c-list__item">
-                    <a href="http://gruntjs.com/">
-                        <img src="assets/img/logos/grunt.svg" width="36px" height="48px" alt="Grunt">
-                    </a>
-                </li>
-            </ul>
-
-            <a class="c-btn" href="https://crated.com/">Visit Crated</a>
-        </article>
-
-        <aside class="c-project__aside">
-            <picture>
-                <source media="(min-width: 78em)" srcset="/assets/img/crated-lg.png">
-                <source media="(min-width: 30em)" srcset="/assets/img/crated-md.png">
-                <source media="(max-width: 30em)" srcset="/assets/img/crated-sm.png">
-                <img src="/assets/img/crated-md.png" alt="Crated homepage screenshot">
-            </picture>
-        </aside>
-    </section>
-
-    <footer class="l-page__separator">
-        <h2>Interested in more? Follow me.</h2>
-        <ul class="c-list c-list--hor is-unstyled">
-            <li class="c-list__item">
-                <a href="https://www.github.com/fabien-d">
-                    <img src="assets/img/logos/github.svg" width="25px" height="24px" alt="GitHub">
-                </a>
-            </li>
-            <li class="c-list__item">
-                <a href="https://www.twitter.com/fabien_doiron">
-                    <img src="assets/img/logos/twitter.svg" width="29px" height="24px" alt="Twitter">
-                </a>
-            </li>
-            <li class="c-list__item">
-                <a href="https://ca.linkedin.com/in/fdoiron">
-                    <img src="assets/img/logos/linkedin.svg" width="24px" height="24px" alt="LinkedIn">
-                </a>
-            </li>
+        <h3 class="font-bold text-lg mb-4">
+          When I'm not programming, you'll most likely find me:
+        </h3>
+        <ul class="list-outside list-disc ml-8">
+          <li class="mb-2">
+            Spending time with my wife and kids
+          </li>
+          <li class="mb-2">
+            Trying to keep all my fingers woodworking
+          </li>
+          <li>Taking care of my growing plant collection</li>
         </ul>
+      </section>
+
+      <section id="work">
+        <h2 class="font-bold text-2xl leading-tight mb-4">
+          Highlights
+        </h2>
+        <div class="px-8 sm:px-16 mb-24 max-w-3xl mx-auto">
+          <ul>
+            <li>
+              <article>
+                <h3 class="font-bold text-lg mb-4">
+                  Auto reflow algorithm - PageCloud
+                </h3>
+                <p class="mb-4 text-right">The problem</p>
+                <p class="mb-4">
+                  &ldquo;Manual layouts&rdquo; in PageCloud allow users to
+                  position elements anywhere without constraints. This gives
+                  users complete creative freedom but breaks the native flow of
+                  elements. Whenever a user would edit text they would be
+                  required to manually re-adjust every element negatively
+                  affects by the change.
+                </p>
+                <p class="mb-4">
+                  <video autoplay loop muted playsinline>
+                    <source
+                      src="assets/videos/auto-reflow-before.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </p>
+                <p class="mb-4 text-right">The solution</p>
+                <p class="mb-4">
+                  I wrote an auto reflow algorithm which recursively determines
+                  how each objects relate to one another in real-time. While a
+                  user edits text, the elements which are determined to be
+                  affected will update automatically in real-time. This means as
+                  the text element grows, certain elements will be pushed down,
+                  when the text element shrink, certain elements will be pulled
+                  up.
+                </p>
+                <p class="mb-4">
+                  <video autoplay loop muted playsinline>
+                    <source
+                      src="assets/videos/auto-reflow-after.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </p>
+                <p class="mb-4">
+                  When pushing elements down, affected elements were never in a
+                  risk of collision. However, pulling elements up could lead to
+                  collision. This was solved by determining where these
+                  collision axis were, and ensure elements stopped prior.
+                </p>
+                <p class="mb-4">
+                  <video autoplay loop muted playsinline>
+                    <source
+                      src="assets/videos/auto-reflow-collision.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </p>
+              </article>
+            </li>
+            <!-- <li>
+              <article>
+                <h3 class="font-bold text-lg mb-4">
+                  Gallery layouts - PageCloud
+                </h3>
+                <p>
+                  Lorem...
+                </p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3 class="font-bold text-lg mb-4">
+                  Drawer component - PageCloud
+                </h3>
+                <p>
+                  Lorem...
+                </p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3 class="font-bold text-lg mb-4">
+                  Full height sections - PageCloud
+                </h3>
+                <p>
+                  Lorem...
+                </p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3 class="font-bold text-lg mb-4">
+                  Column width control - PageCloud
+                </h3>
+                <p>
+                  Lorem...
+                </p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3 class="font-bold text-lg mb-4">
+                  Individual property control - PageCloud
+                </h3>
+                <p>
+                  Lorem...
+                </p>
+              </article>
+            </li> -->
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer id="reach-me" class="px-8 sm:px-16 mb-24 max-w-3xl mx-auto">
+      <h2 class="font-bold text-2xl leading-tight mb-4">Reach me</h2>
+      <ul class="flex justify-start items-center">
+        <li class="mr-2">
+          <a href="https://www.github.com/fabien-d">GitHub</a>
+        </li>
+        <li class="mr-2">
+          <a href="https://www.twitter.com/fabien_doiron">Twitter</a>
+        </li>
+        <li class="mr-2">
+          <a href="https://ca.linkedin.com/in/fdoiron">LinkedIn</a>
+        </li>
+        <li class="mr-2">
+          <a href="https://speakerdeck.com/fabien_doiron/">Speaker Deck</a>
+        </li>
+      </ul>
     </footer>
-
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-20212756-2', 'auto');
-    ga('send', 'pageview');
-    </script>
-
-</body>
+  </body>
 </html>
