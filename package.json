@@ -1,0 +1,26 @@
+{
+  "name": "fabien-d.github.io",
+  "version": "1.0.0",
+  "description": "fabien-d.github.io ==================",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss src/styles.css > assets/css/styles.min.css",
+    "build:prod": "NODE_ENV=production npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabien-d/fabien-d.github.io.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabien-d/fabien-d.github.io/issues"
+  },
+  "homepage": "https://github.com/fabien-d/fabien-d.github.io#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6"
+  }
+}
